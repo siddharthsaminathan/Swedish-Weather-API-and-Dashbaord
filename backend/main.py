@@ -10,7 +10,13 @@ import json
 from typing import List, Optional
 import os
 
-app = FastAPI(title="WindSurf Analytics API")
+app = FastAPI(
+    title="OceanMetrics: Real-time Maritime Analytics Platform",
+    description="Enterprise-grade distributed system for real-time weather analytics and maritime conditions monitoring. Built with FastAPI, Apache Kafka, PostgreSQL, and React.",
+    version="1.0.0",
+    docs_url="/api/docs",
+    redoc_url="/api/redoc"
+)
 
 # Add CORS middleware
 app.add_middleware(
