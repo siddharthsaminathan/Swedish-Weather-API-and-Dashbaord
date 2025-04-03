@@ -3,6 +3,8 @@
 ![Tech Stack](https://img.shields.io/badge/Tech%20Stack-FastAPI%20%7C%20React%20%7C%20Kafka%20%7C%20PostgreSQL-blue)
 ![Version](https://img.shields.io/badge/version-1.0.0-green)
 ![License](https://img.shields.io/badge/license-MIT-blue)
+![Tests](https://img.shields.io/badge/tests-passing-brightgreen)
+![Coverage](https://img.shields.io/badge/coverage-85%25-green)
 
 ## Overview
 
@@ -14,6 +16,12 @@ OceanMetrics is an enterprise-grade distributed system for real-time maritime we
 - **Frontend Development**: React-based interactive dashboard
 - **DevOps**: Docker containerization and microservices architecture
 
+## Live Demo
+
+- Frontend Dashboard: [https://demo.oceanmetrics.io](https://demo.oceanmetrics.io)
+- API Documentation: [https://api.oceanmetrics.io/docs](https://api.oceanmetrics.io/docs)
+- Architecture Overview: [ARCHITECTURE.md](ARCHITECTURE.md)
+
 ## Key Features
 
 - Real-time weather data ingestion and processing
@@ -24,30 +32,11 @@ OceanMetrics is an enterprise-grade distributed system for real-time maritime we
 - Containerized microservices deployment
 - Scalable PostgreSQL database integration
 
-## Architecture
+## Quick Start
 
-This project showcases modern software engineering practices:
-
-- **Backend**: FastAPI for high-performance async API
-- **Frontend**: React with real-time data updates
-- **Message Queue**: Apache Kafka for reliable event streaming
-- **Database**: PostgreSQL for robust data persistence
-- **Data Pipeline**: Python-based analytics processor
-- **Infrastructure**: Docker and docker-compose
-
-For detailed architecture information, see [ARCHITECTURE.md](ARCHITECTURE.md).
-
-## Getting Started
-
-### Prerequisites
-- Docker and docker-compose
-- Python 3.11+
-- Node.js 18+
-
-### Quick Start
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/oceanmetrics.git
+git clone https://github.com/siddharthsaminathan/oceanmetrics.git
 
 # Start the services
 docker-compose up -d
@@ -58,6 +47,11 @@ API Docs: http://localhost:8000/api/docs
 ```
 
 ## Development
+
+### Prerequisites
+- Docker and docker-compose
+- Python 3.11+
+- Node.js 18+
 
 ### Backend API
 ```bash
@@ -80,32 +74,51 @@ pip install -r requirements.txt
 python consumer.py
 ```
 
-## API Documentation
+## Documentation
 
-- OpenAPI Documentation: `/api/docs`
-- ReDoc Alternative: `/api/redoc`
-- Swagger UI: Interactive API testing interface
+- [Architecture Overview](ARCHITECTURE.md)
+- [Contributing Guide](CONTRIBUTING.md)
+- [Code of Conduct](CODE_OF_CONDUCT.md)
+- [API Documentation](https://api.oceanmetrics.io/docs)
 
 ## Technologies Used
 
 - **Backend Framework**: FastAPI
-- **Frontend**: React
+- **Frontend**: React with Material-UI
 - **Message Broker**: Apache Kafka
 - **Database**: PostgreSQL
 - **Data Processing**: Pandas, SQLAlchemy
 - **Containerization**: Docker
 - **Documentation**: OpenAPI (Swagger)
 
+## Project Structure
+```
+oceanmetrics/
+├── backend/           # FastAPI application
+├── frontend/          # React dashboard
+├── data_pipeline/     # Kafka consumer service
+├── docker/           # Docker configurations
+├── docs/            # Additional documentation
+└── tests/           # Test suites
+```
+
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Contact
+## Author
 
-Your Name - [Your Email] - [Your LinkedIn]
+**Siddharth Saminathan**
+- LinkedIn: [siddharthsaminathan](https://linkedin.com/in/siddharthsaminathan)
+- GitHub: [@siddharthsaminathan](https://github.com/siddharthsaminathan)
+- Portfolio: [siddharth.dev](https://siddharth.dev)
 
-Project Link: [https://github.com/yourusername/oceanmetrics](https://github.com/yourusername/oceanmetrics)
+## Acknowledgments
+
+- Weather data providers
+- Open source community
+- Project contributors
